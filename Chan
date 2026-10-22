@@ -1,0 +1,104 @@
+!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sayon Kundu</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  body{font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;background:#070b14;color:#fff;min-height:100vh;overflow-x:hidden;position:relative}
+
+  .blob{position:fixed;border-radius:50%;filter:blur(80px);opacity:.55;z-index:0;animation:float 12s ease-in-out infinite}
+  .b1{width:320px;height:320px;background:#7c3aed;top:-80px;left:-80px}
+  .b2{width:300px;height:300px;background:#06b6d4;top:35%;right:-120px;animation-delay:-4s}
+  .b3{width:280px;height:280px;background:#ec4899;bottom:-80px;left:10%;animation-delay:-8s}
+  @keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-40px) scale(1.15)}}
+
+  .wrap{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:36px 18px 60px}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.show{opacity:1;transform:none}
+
+  .hero{text-align:center;padding:10px 0 8px}
+  .ring{width:128px;height:128px;border-radius:50%;margin:0 auto 18px;padding:4px;background:conic-gradient(from 0deg,#f43f5e,#f59e0b,#22c55e,#06b6d4,#8b5cf6,#f43f5e);animation:spin 6s linear infinite;box-shadow:0 0 40px rgba(139,92,246,.6)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .avatar{width:100%;height:100%;border-radius:50%;background:#0b1020;display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:800;animation:spin 6s linear infinite reverse}
+  .avatar span{background:linear-gradient(135deg,#22d3ee,#a78bfa,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font-size:30px;font-weight:800;background:linear-gradient(90deg,#fff,#c4b5fd,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .tag{display:inline-block;margin-top:10px;padding:6px 16px;border-radius:30px;font-size:13px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(10px);color:#d1d5db}
+
+  h2{font-size:17px;margin:34px 0 14px;display:flex;align-items:center;gap:10px}
+  h2 i{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:15px;background:linear-gradient(135deg,#8b5cf6,#06b6d4)}
+
+  .glass{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:20px;padding:6px 18px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  .row{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px}
+  .row:last-child{border-bottom:none}
+  .row i{width:22px;text-align:center;color:#a78bfa}
+  .row .k{color:#9ca3af;flex:1}
+  .row .v{font-weight:600}
+
+  .social a{display:flex;align-items:center;gap:14px;padding:12px 14px;margin-bottom:12px;border-radius:18px;color:#fff;text-decoration:none;font-weight:600;font-size:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(14px);transition:transform .25s,box-shadow .25s,background .25s}
+  .social a:hover,.social a:active{transform:translateY(-3px) scale(1.01);background:rgba(255,255,255,.12)}
+  .social .ic{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px}
+  .social .go{margin-left:auto;color:#9ca3af;font-size:14px}
+  .yt .ic{background:linear-gradient(135deg,#ff0000,#b91c1c)}
+  .yt:hover{box-shadow:0 8px 28px rgba(255,0,0,.35)}
+  .fb .ic{background:linear-gradient(135deg,#1877f2,#0b4fb8)}
+  .fb:hover{box-shadow:0 8px 28px rgba(24,119,242,.4)}
+  .tt .ic{background:linear-gradient(135deg,#25f4ee,#111 50%,#fe2c55)}
+  .tt:hover{box-shadow:0 8px 28px rgba(254,44,85,.35)}
+  .gg .ic{background:linear-gradient(135deg,#4285f4,#34a853,#fbbc05,#ea4335)}
+  .gg:hover{box-shadow:0 8px 28px rgba(66,133,244,.4)}
+
+  footer{text-align:center;color:#6b7280;font-size:12.5px;margin-top:40px}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+
+<div class="wrap">
+
+  <!-- ===== প্রোফাইল ===== -->
+  <div class="hero reveal">
+    <div class="ring"><div class="avatar"><span>S</span></div></div>
+    <h1>Sayon Kundu</h1>
+    <div class="tag"><i class="fa-solid fa-circle-check"></i> কন্টেন্ট ক্রিয়েটর</div>
+  </div>
+
+  <!-- ===== আমার তথ্য ===== -->
+  <h2 class="reveal"><i class="fa-solid fa-user"></i> আমার সম্পর্কে</h2>
+  <div class="glass reveal">
+    <div class="row"><i class="fa-solid fa-id-badge"></i><span class="k">নাম</span><span class="v">Sayon Kundu</span></div>
+    <div class="row"><i class="fa-solid fa-location-dot"></i><span class="k">দেশ</span><span class="v">বাংলাদেশ</span></div>
+    <div class="row"><i class="fa-solid fa-envelope"></i><span class="k">ইমেইল</span><span class="v" style="font-size:13px">sayonkundu779@gmail.com</span></div>
+    <div class="row"><i class="fa-solid fa-heart"></i><span class="k">আগ্রহ</span><span class="v">ভিডিও, টেকনোলজি</span></div>
+  </div>
+
+  <!-- ===== সোশ্যাল লিংক ===== -->
+  <h2 class="reveal"><i class="fa-solid fa-share-nodes"></i> আমাকে ফলো করুন</h2>
+  <div class="social">
+    <a class="yt reveal" href="https://youtube.com/@sayonkundu779" target="_blank" rel="noopener"><span class="ic"><i class="fa-brands fa-youtube"></i></span>YouTube<i class="fa-solid fa-arrow-up-right-from-square go"></i></a>
+    <a class="fb reveal" href="https://www.facebook.com/share/1cDyBuc8Md/" target="_blank" rel="noopener"><span class="ic"><i class="fa-brands fa-facebook-f"></i></span>Facebook<i class="fa-solid fa-arrow-up-right-from-square go"></i></a>
+    <a class="tt reveal" href="https://www.tiktok.com/@sayonkundu" target="_blank" rel="noopener"><span class="ic"><i class="fa-brands fa-tiktok"></i></span>TikTok<i class="fa-solid fa-arrow-up-right-from-square go"></i></a>
+    <a class="gg reveal" href="mailto:sayonkundu779@gmail.com"><span class="ic"><i class="fa-brands fa-google"></i></span>Gmail<i class="fa-solid fa-envelope go"></i></a>
+  </div>
+
+  <footer class="reveal">© 2026 Sayon Kundu · Made with <i class="fa-solid fa-heart" style="color:#f43f5e"></i></footer>
+</div>
+
+<script>
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
+  } else {
+    els.forEach(function (el) { el.classList.add('show'); });
+  }
+</script>
+</body>
+</html>
